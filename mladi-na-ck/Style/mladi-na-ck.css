@@ -142,3 +142,31 @@ nav {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "open sans", sans-serif;
+}
+
+.h1-rectangle {
+    border: 1px solid #BF0000;
+    border-radius: 5px;
+    padding: 5px;
+    width: 581px;
+}
+
+.h1-rectangle h1 {
+    text-align: center;
+}
+
+.firs-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-rectangle {
+    border: 1px solid #BF0000;
+    border-radius: 10px;
+    min-width: 831px;
+}
