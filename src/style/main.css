@@ -132,6 +132,8 @@ nav {
   gap: 20px
 }
 
+
+
 /* Донации копче со додадени ховер и актив ефекти */
 
 .donationsBtn {
@@ -428,7 +430,7 @@ a:hover {
 /* footer */
 
 footer {
-  background-color: #bf0000;
+  background-color: #BF0000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -439,13 +441,11 @@ footer {
   padding: 0px 10px 0px 10px;
   padding: 100px;
 }
-
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .buttons {
   display: flex;
   flex-flow: row;
@@ -454,13 +454,11 @@ footer {
   overflow: hidden;
   font-size: 12px;
 }
-
 .buttons ul li {
   display: inline-block;
   flex-direction: row;
   margin: 10px;
 }
-
 .buttons ul li a {
   display: flex;
   flex-direction: row;
@@ -479,7 +477,6 @@ footer {
   line-height: 22px;
   color: #BF0000;
 }
-
 .buttons ul li a:hover {
   display: flex;
   flex-direction: row;
