@@ -101,7 +101,7 @@ nav {
 .mglass {
   display: inline-block;
   pointer-events: none;
-  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -142,7 +142,7 @@ nav {
 }
 
 .search:focus {
-  width: 363px;
+  width: 100px;
   /* Bar width+1px */
   padding: 0 16px 0 0;
 }
