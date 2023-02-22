@@ -163,6 +163,7 @@ nav {
 .firs-row {
     display: flex;
     justify-content: space-between;
+    padding-top: 50PX;
 }
 
 .p-rectangle {
