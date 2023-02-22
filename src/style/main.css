@@ -27,10 +27,10 @@ nav {
 }
 
 .sticky {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
+
 
 .navLinks>ul>li {
   display: inline-block;
@@ -38,11 +38,12 @@ nav {
 }
 
 .navLinks>ul>li>a {
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   color: #2F2F2F;
-  font-weight: 800;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .navLinks>ul>li>a::after {
@@ -65,8 +66,7 @@ nav {
 
 
 .active::after {
-  content: '';
-  display: flex;
+  display: block;
   background-color: #BF0000;
   height: 3px;
   width: 100%;
@@ -75,7 +75,9 @@ nav {
 
 .active {
   position: relative;
+  content: "";
   top: -5px;
+  width: 100%;
 }
 
 .Search {
@@ -125,234 +127,89 @@ nav {
   z-index: 1;
 }
 
+/* kopcinja */
+
+
 .kopcinja {
-  display: flex;
-  flex-direction: column;
   padding: 20px;
-  gap: 20px
 }
 
 /* Донации копче со додадени ховер и актив ефекти */
 
-.donationsBtn {
+.btn {
+  display: inline-block;
   background-color: #BF0000;
-  text-decoration: none;
   color: #FFFFFF;
-  min-width: 134px;
-  max-width: 134px;
-  height: 52px;
+  padding: 15px 35px;
   border-radius: 5px;
-  font-family: 'Open Sans' sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
+  text-decoration: none;
   line-height: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 4px 2px;
 }
 
-.donationsBtn:hover {
+.btn-primary:hover {
   background-color: #DC0303;
-  text-decoration: none;
   color: #FFFFFF;
-  min-width: 134px;
-  max-width: 134px;
-  height: 52px;
-  border-radius: 5px;
-  font-family: 'Open Sans' sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.donationsBtn:active {
+.btn-primary:active {
   background-color: #FF1F1F;
-  text-decoration: none;
   color: #FFFFFF;
-  min-width: 134px;
-  max-width: 134px;
-  height: 52px;
-  border-radius: 5px;
-  font-family: 'Open Sans' sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  /* identical to box height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Menu text копче */
 
-.menuText {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  min-width: 152px;
-  max-width: 152px;
-  height: 52px;
+.btn-secondary {
   background: #FFFFF6;
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: 'Open Sans' sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 22px;
   color: #BF0000;
 }
 
-.menuText:hover {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  min-width: 152px;
-  max-width: 152px;
-  height: 52px;
+.btn-secondary:hover {
   background: #FFFFF6;
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: 'Open Sans' sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 22px;
   color: #2F2F2F;
 }
 
-.menuText:active {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  min-width: 152px;
-  max-width: 152px;
-  min-height: 52px;
+.btn-secondary:active {
   background: #BF0000;
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: 'Open Sans' sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 22px;
   color: #FFFFF6;
 }
 
 
 /* Стани волонтер/член копчиња */
 
-.become {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-  gap: 10px;
-  min-width: 195px;
-  max-width: 195px;
-  height: 52px;
+.btn-volonter {
   background: #BF0000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
   border: 2px solid #BF0000;
-  text-decoration: none;
   color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
 }
 
-.become:active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-  gap: 10px;
+.btn-volonter:active {
   background: #FFFFFF;
-  min-width: 195px;
-  max-width: 195px;
-  height: 52px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
   border: 2px solid #BF0000;
-  text-decoration: none;
   color: #BF0000;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
 }
 
 /* Online курсеви копче */
 
-.course {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-  gap: 10px;
+.btn-kurs {
   background: #FFFFFF;
-  min-width: 304px;
-  max-width: 304px;
   height: 52px;
   border: 2px solid #BF0000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
   color: #BF0000;
-  text-decoration: none;
 }
 
-.course:active {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 30px;
-  gap: 10px;
+.btn-kurs:active {
   background: #BF0000;
-  min-width: 304px;
-  height: 52px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  border-radius: 5px;
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
   color: #FFFFFF;
-  text-decoration: none;
 }
 
 /* Организација и развој линкови */
 
-.org {
-  font-family: 'Open Sans', sans-serif;
+.org-link {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -365,22 +222,11 @@ nav {
   min-height: 27px;
 }
 
-.org:hover {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-  display: flex;
-  align-items: center;
+.org-link:hover {
   color: #BF0000;
-  text-transform: uppercase;
-  min-width: 258px;
-  min-height: 27px;
 }
 
-.cardText {
-  font-family: 'Open Sans', sans-serif;
+.card-text {
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -392,17 +238,8 @@ nav {
   text-decoration: none;
 }
 
-.cardText:hover {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-  display: flex;
-  align-items: center;
-  text-align: center;
+.card-text:hover {
   color: #BF0000;
-  text-decoration: none;
 }
 
 
@@ -416,12 +253,9 @@ a {
 }
 
 .more:active,
-a:active,
+.more>a:active,
 .more:hover,
-a:hover {
-  display: flex;
-  align-items: center;
-  font-size: 12px;
+.more>a:hover {
   color: #2F2F2F;
 }
 
@@ -481,21 +315,6 @@ footer {
 }
 
 .buttons ul li a:hover {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  padding: 15px 30px;
-  height: 46px;
   background: #FFFFF6;
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: 'Open Sans' sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 12px;
-  line-height: 22px;
   color: #2F2F2F;
 }
