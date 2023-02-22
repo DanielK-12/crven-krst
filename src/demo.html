@@ -171,17 +171,19 @@
       </ul>
     </div>
     <div class="right">
-      <div class="search">
-        <form action="" method="" class="Search">
-
-          <label class="icon fa fa-search" for="search"></label>
-          <input type="text" placeholder="Search                          " class="underline" id="search">
-
+      <div class="search-container">
+        <form action="/search" method="get">
+          <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+          <label class="button searchbutton" for="searchright"><span class="mglass">&#9906;</span></label>
         </form>
       </div>
-      <div class="donations">
-        <button></button>
-        <div class="lang"></div>
+      <div class="flags">
+        <a href="#" class="btn btn-primary">Донации</a>
+        <div class="lang">
+          <a href="#"><img src="../src/img/Macedonia.png" alt="macedonian-flag"></a>
+          <a href="#"><img src="../src/img/United States of America.png" alt="american-flag"></a>
+          <a href="#"><img src="../src/img/Albania.png" alt="albanian-flag"></a>
+        </div>
       </div>
 
     </div>
