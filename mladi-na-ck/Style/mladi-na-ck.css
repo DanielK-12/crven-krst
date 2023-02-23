@@ -288,4 +288,23 @@ span::after {
 
 /*--Наслов што е на средина и што има црвена линија испод него-->*/
 
+/*Петтиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+.fifth img {
+    min-height: 407px;
+    min-width: 741px;
+}
+
+.fifth p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29.79px;
+    margin-right: 50px;
+    border: 2px solid #BF0000;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+/*Петтиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
 /*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
