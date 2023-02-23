@@ -239,4 +239,32 @@ nav {
 
 /*Третиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
 
+/*Четвртиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+.fourth img {
+    max-width: 580px;
+    max-height: 328px;
+}
+
+.fourth h1 {
+    max-width: 832px;
+    font-size: 24px;
+    margin-left: 30px;
+    border: 2px solid #BF0000;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.fourth p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29.79px;
+    border: 2px solid #BF0000;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+/*Четвртиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
 /*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
