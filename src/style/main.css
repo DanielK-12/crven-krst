@@ -69,11 +69,11 @@ nav {
 
 
 .active::after {
-  display: block;
+  content: '';
+  display: flex;
   background-color: #BF0000;
   height: 3px;
-  width: 100%;
-  transition: 1s ease;
+  width: 100% !important;
 }
 
 .active {
@@ -316,7 +316,16 @@ h1 {
 }
 
 .volonter-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/hero-image-flag.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/volunteers-young-people-red-tshirts-looking-joyful-happy\ 1.png);
+  height: 100%;
+  width: 100%;
+}
+
+.volonter-h {
+  color: #FFFFFF;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 87px;
 }
 
 /* kopcinja */
