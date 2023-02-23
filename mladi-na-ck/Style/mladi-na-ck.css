@@ -166,4 +166,41 @@ nav {
 
 /*Најпрвиот параграф од hero секцијата*/
 
+
+/* "box"  содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* "box"  содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+/*Првиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+.first img {
+    max-width: 579px;
+    max-height: 313px;
+    float: right;
+}
+
+.first p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29.79px;
+    border: 2px solid #BF0000;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+.first h1 {
+    border: 2px solid #BF0000;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 581px;
+}
+
+/*Првиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
 /*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
