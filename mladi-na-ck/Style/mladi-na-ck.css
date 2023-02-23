@@ -392,3 +392,92 @@ h2 {
 /*Насловот и параграфот што се на дното на секцијата*/
 
 /*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
+
+/*Footer*/
+footer {
+    background-color: #bf0000;
+    display: flex;
+    align-items: center;
+    min-width: 1920px;
+    min-height: 437px;
+    position: relative;
+    bottom: 0;
+    padding: 0px 10px 0px 10px;
+    padding: 100px;
+}
+
+/*Div што го содржи логото и листата со линкови*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Div што го содржи логото и листата со линкови*/
+
+/*Листата со линкови*/
+.buttons {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    min-width: 1400px;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.buttons ul li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.buttons ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    height: 46px;
+    background: #FFFFF6;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Open Sans' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 22px;
+    color: #BF0000;
+}
+
+.buttons ul li a:hover {
+    background: #FFFFF6;
+    color: #2F2F2F;
+}
+
+/*Листата со линкови*/
+
+
+/*Копирајт*/
+.linkovi {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.linkovi p {
+    font-size: 24px;
+    color: #FFFFF6;
+    font-weight: 600;
+}
+
+.linkovi a {
+    text-decoration: none;
+    color: #FFFFF6;
+}
+
+/*Копирајт*/
+
+/*footer*/
