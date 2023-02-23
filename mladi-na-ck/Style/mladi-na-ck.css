@@ -147,3 +147,23 @@ nav {
 }
 
 /*Слика за hero секцијата*/
+
+
+/*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
+.hero-content {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1920px;
+    padding-bottom: 80px;
+}
+
+/*Најпрвиот параграф од hero секцијата*/
+.Main-paragraph {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27.24px;
+}
+
+/*Најпрвиот параграф од hero секцијата*/
+
+/*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
