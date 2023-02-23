@@ -267,4 +267,25 @@ nav {
 
 /*Четвртиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
 
+
+/*--Наслов што е на средина и што има црвена линија испод него-->*/
+h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+span::after {
+    content: '';
+    display: block;
+    background-color: #BF0000;
+    height: 5px;
+    width: 13%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin-top: 10px;
+}
+
+/*--Наслов што е на средина и што има црвена линија испод него-->*/
+
 /*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
