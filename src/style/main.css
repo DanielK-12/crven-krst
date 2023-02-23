@@ -319,6 +319,10 @@ h1 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/volunteers-young-people-red-tshirts-looking-joyful-happy\ 1.png);
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .volonter-h {
@@ -326,6 +330,15 @@ h1 {
   font-size: 64px;
   font-weight: 700;
   line-height: 87px;
+}
+
+.volonter-p {
+  width: 640px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /* kopcinja */
