@@ -347,4 +347,31 @@ span::after {
 
 /*Шестиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
 
+/*Седмиот"box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+.seven img {
+    min-width: 550px;
+    min-height: 310px;
+    margin-left: 20px;
+}
+
+
+.seven h1 {
+    font-size: 24px;
+    font-weight: 700;
+    min-width: 831px;
+    border: 2px solid #BF0000;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.seven .six-2 {
+    border: 2px solid #BF0000;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+/*Седмиот"box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
 /*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
