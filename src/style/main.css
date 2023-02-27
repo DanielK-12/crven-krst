@@ -173,6 +173,7 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin-top: 20px;
 }
 
 /* main container */
@@ -286,12 +287,20 @@ h1 {
   flex-direction: column;
   width: 397px;
   height: 470px;
+}
+
+.widget-box>a {
+  align-self: center;
   text-align: center;
   font-size: 20px;
   font-weight: 600;
   line-height: 27px;
   color: #2F2F2F;
+  text-decoration: none;
+  padding-top: 20px;
 }
+
+
 
 .box-one,
 .box-two,
@@ -306,6 +315,12 @@ h1 {
   background-color: #FFFFFF;
   overflow: hidden;
 
+}
+
+.bon-one:hover,
+.box-two:hover,
+.box-three:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 /* volonter section */
