@@ -300,11 +300,16 @@ h1 {
   padding-top: 20px;
 }
 
+.widget-box>a:hover {
+  color: #BF0000;
+}
+
 
 
 .box-one,
 .box-two,
 .box-three {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -317,10 +322,31 @@ h1 {
 
 }
 
-.bon-one:hover,
-.box-two:hover,
-.box-three:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+.box-two {
+  background-image: url(../img/sl_050622_50190_20\ 1.png);
+}
+
+.box-three {
+  background-image: url(../img/);
+}
+
+.box-one:before,
+.box-two:before,
+.box-three:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  transition: height 0.3s ease-out;
+  background: linear-gradient(to bottom, transparent 0%, grey 100%);
+}
+
+.box-one:hover::before,
+.box-two:hover::before,
+.box-three:hover:before {
+  height: 100%;
 }
 
 /* volonter section */
