@@ -260,17 +260,10 @@ h1 {
 .crven-krst-logo {
   padding: 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-.crven-krst-logo>h3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 32px;
-  color: #2F2F2F;
-  padding-left: 20px;
-}
+
 
 .widget-container {
   display: flex;
@@ -404,39 +397,106 @@ h1 {
   align-self: center;
 }
 
-.volonter-dots {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: none;
-  background-color: #BF0000;
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+  color: #2F2F2F;
+  border-bottom: solid 3px #BF0000;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
 }
 
-.volonter-dots {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: none;
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+  color: #2F2F2F;
+  padding: 30px;
 }
+
 
 /* vesti/novosti/kalendar section */
 
 .vesti-container {
   display: flex;
   width: 100%;
-  height: 1420px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
 }
 
 .vesti {
   display: flex;
+  flex-direction: column;
   flex: 2;
-  border: solid 2px #BF0000;
+  height: 670px;
+  width: 873px;
+  border-radius: 5px;
+  align-items: start;
+}
+
+.vesti-box {
+  display: flex;
+  flex-direction: column;
+  border: solid 3px #BF0000;
+  align-items: center;
+  height: 552px;
+  width: 870px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px;
 }
 
 .kalendar {
   display: flex;
+  flex-direction: column;
+  align-items: start;
   flex: 1;
-  border: solid 2px #BF0000;
+  height: 670px;
+  width: 443px;
+}
+
+.kalendar-box {
+  display: flex;
+  border: solid 3px #BF0000;
+  height: 552px;
+  width: 443px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.cards {
+  display: flex;
+  width: 803px;
+  height: 130px;
+  border-radius: 5px;
+  background-image: linear-gradient(270deg, rgba(191, 0, 0, 0.12)0%, rgba(217, 217, 217, 0)72.79%);
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
+.cards-content {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+h5 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16.34px;
+  color: #2F2F2F;
+}
+
+.cards-content>p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  color: #2F2F2F;
 }
 
 /* kopcinja */
