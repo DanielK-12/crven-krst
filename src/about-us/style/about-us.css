@@ -42,14 +42,13 @@ main {
     /* Bottom Red */
     border: 3px solid #BF0000;
     border-radius: 10px;
+    margin: 10px;
 }
 
-.card h1 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 33px;
+.card-3 {
+    width: 32%;
+}
+.card-title {
     align-items: center;
     font-feature-settings: 'liga' off;
     width: 100%;
@@ -58,6 +57,15 @@ main {
     background: linear-gradient(270deg, rgba(191, 0, 0, 0.1) 0%, rgba(191, 0, 0, 0.02) 100%);
     /* Bottom Red */
     border-bottom: 2px solid #BF0000;
+}
+.card-title h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    align-items: flex-start;
+    font-feature-settings: 'liga' off;
     color: #2F2F2F;
 }
 
@@ -75,6 +83,16 @@ main {
 .card ul {
     padding: 30px 40px;
 }
+
+.card p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 271.18%;
+    font-feature-settings: 'liga' off;
+}
+
 main p {
     font-family: 'Open Sans'; 
     font-style: normal;
@@ -84,3 +102,10 @@ main p {
     font-feature-settings: 'liga' off;
     color: #2F2F2F;
 }
+
+ #company-structure-image {
+    width: 95%;
+    align-self: center; 
+ }
+
+
