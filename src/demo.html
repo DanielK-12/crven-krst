@@ -171,17 +171,20 @@
       </ul>
     </div>
     <div class="right">
-      <div class="search">
-        <form action="" method="" class="Search">
-
-          <label class="icon fa fa-search" for="search"></label>
-          <input type="text" placeholder="Search                          " class="underline" id="search">
-
+      <div class="search-container">
+        <form action="/search" method="get">
+          <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+          <div class="circle"><label class="button searchbutton" for="searchright"><span
+                class="mglass">&#9906;</span></label></div>
         </form>
       </div>
-      <div class="donations">
-        <button></button>
-        <div class="lang"></div>
+      <div class="flags">
+        <a href="#" class="btn btn-primary">Донации</a>
+        <div class="lang">
+          <a href="#"><img src="../src/img/Macedonia.png" alt="macedonian-flag"></a>
+          <a href="#"><img src="../src/img/United States of America.png" alt="american-flag"></a>
+          <a href="#"><img src="../src/img/Albania.png" alt="albanian-flag"></a>
+        </div>
       </div>
 
     </div>
@@ -189,19 +192,18 @@
 
   <!-- buttons -->
   <div class="kopcinja">
-    <a href="#" class="donationsBtn">Донации</a>
-    <a href="#" class="menuText">Menu text</a>
-    <a href="#" class="become">Стани волонтер</a>
-    <a href="#" class="course">Online курсеви за Волонтери</a>
-    <a href="#" class="org">организација и развој</a>
-    <a href="#" class="cardText">Локации на Црвен Крст на <br>Република Северна Македонија</a>
+    <a href="#" class="btn btn-primary">Донации</a>
+    <a href="#" class="btn btn-secondary">Menu text</a>
+    <a href="#" class="btn btn-volonter">Стани волонтер</a>
+    <a href="#" class="btn btn-kurs">Online курсеви за Волонтери</a>
+    <a href="#" class="org-link">организација и развој</a>
+    <a href="#" class="card-text">Локации на Црвен Крст на <br>Република Северна Македонија</a>
     <div class="more">
       <a href="#">Повеќе</a>
       <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
         stroke="currentColor" class="w-6 h-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
       </svg>
-
     </div>
   </div>
 
