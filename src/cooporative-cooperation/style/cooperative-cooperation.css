@@ -28,6 +28,10 @@ main articles {
     align-self: center;
     justify-content: center;
 }
+.card-thumb {
+    object-fit:cover;
+    max-height:200%
+} 
 
 .cooperative-cooperation-article {
     display: flex;
@@ -50,7 +54,8 @@ main articles {
     border-top-right-radius: 7px;
     margin: 0px;
     padding: 0px;
-    object-fit: cover, max-height;
+    object-fit: cover;
+    max-height; 
     overflow: hidden;
 
 }
