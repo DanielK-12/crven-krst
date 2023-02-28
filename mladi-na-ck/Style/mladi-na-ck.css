@@ -14,23 +14,24 @@ body {
     font-family: "open sans", sans-serif;
 }
 
+/*Навигацијата запоцнува тука*/
 nav {
     display: flex;
     align-items: center;
-    width: 1920px;
+    min-width: 1920px;
     height: 160px;
     border-bottom: solid #BF0000 3px;
     padding: 13px 69px 13px 74px;
-    gap: 20px;
     background-color: #FFFFF6;
     z-index: 999;
+    justify-content: space-between;
 }
 
 .sticky {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
 }
+
 
 .navLinks>ul>li {
     display: inline-block;
@@ -38,12 +39,12 @@ nav {
 }
 
 .navLinks>ul>li>a {
+    display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
     color: #2F2F2F;
-    font-weight: 800;
-    font-size: 15px;
-    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .navLinks>ul>li>a::after {
@@ -69,61 +70,132 @@ nav {
     content: '';
     display: flex;
     background-color: #BF0000;
-    height: 5px;
+    height: 3px;
     width: 100% !important;
 }
 
 .active {
     position: relative;
+    content: "";
     top: -5px;
+    width: 100%;
 }
 
-.Search {
-    float: right;
-    padding: 15px 40px 15px 0px;
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search-container {
     position: relative;
-}
-
-.Search input {
-    background: #252525;
-    font-size: 1.5em;
-    font-weight: 300;
-    height: 20px;
-    position: relative;
-    text-indent: 46px;
-    width: 45px;
-    border: none;
-    transition: width 1s;
-}
-
-::-webkit-input-placeholder {
-    color: #fff;
-    box-shadow: 45px 1px 0 0 #fff;
-}
-
-.Search input:hover,
-.Search input:active,
-.Search input:focus {
-    font-size: 1.6em;
-    font-weight: 300;
+    display: inline-block;
+    margin: 4px 2px;
     height: 50px;
-    position: relative;
-    text-indent: 46px;
-    width: 450px;
-    border-bottom: #fff solid 1px;
-    transition: width 1s;
+    width: 50px;
+    vertical-align: bottom;
 }
 
-.Search .icon {
-    color: #fff;
-    font-size: 1.6em;
-    height: 50px;
-    width: 45px;
-    left: 10px;
+.mglass {
+    display: inline-block;
+    pointer-events: none;
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+    position: relative;
+    font-size: 22px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.search:focus+.searchbutton {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+}
+
+.search {
     position: absolute;
-    top: 30px;
-    z-index: 1;
+    left: 49px;
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 0;
+    height: 100%;
+    z-index: 10;
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
 }
+
+.search:focus {
+    width: 100px;
+    padding: 0 16px 0 0;
+}
+
+.expandright {
+    left: auto;
+    right: 49px;
+}
+
+.expandright:focus {
+    padding: 0 0 0 16px;
+}
+
+.flags {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lang {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*Навигацијата завршува тука*/
+
+/*Копче што е во навигацијата со има "Донации*/
+.btn {
+    display: inline-block;
+    background-color: #BF0000;
+    color: #FFFFFF;
+    padding: 15px 35px;
+    border: solid 2px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 22px;
+    margin: 4px 2px;
+}
+
+.btn-primary:hover {
+    background-color: #DC0303;
+    color: #FFFFFF;
+}
+
+.btn-primary:active {
+    background-color: #FF1F1F;
+    color: #FFFFFF;
+}
+
+/*Копче што е во навигацијата со има "Донации*/
+
 
 /*Слика за hero секцијата*/
 .hero-image {
@@ -162,6 +234,7 @@ nav {
     font-size: 20px;
     font-weight: 600;
     line-height: 27.24px;
+
 }
 
 /*Најпрвиот параграф од hero секцијата*/
@@ -174,15 +247,16 @@ nav {
     justify-content: space-between;
 }
 
+.box img {
+    background-size: cover;
+    width: 100%;
+    max-height: 550px;
+    background-position: center;
+}
+
 /* "box"  содржи параграф и слика. Десно слика лево параграф и обратно*/
 
 /*Првиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
-.first img {
-    max-width: 579px;
-    max-height: 313px;
-    float: right;
-}
-
 .first p {
     font-size: 16px;
     font-weight: 600;
@@ -204,10 +278,6 @@ nav {
 /*Првиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
 
 /*Вториот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
-.second img {
-    max-width: 594px;
-    max-height: 339px;
-}
 
 .second p {
     font-weight: 600;
@@ -222,10 +292,6 @@ nav {
 /*Вториот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
 
 /*Третиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
-.third img {
-    max-width: 594px;
-    max-height: 339px;
-}
 
 .third p {
     font-weight: 600;
@@ -240,15 +306,10 @@ nav {
 /*Третиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
 
 /*Четвртиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
-.fourth img {
-    max-width: 580px;
-    max-height: 328px;
-}
 
 .fourth h1 {
     max-width: 832px;
     font-size: 24px;
-    margin-left: 30px;
     border: 2px solid #BF0000;
     padding: 15px;
     border-radius: 5px;
@@ -289,16 +350,11 @@ span::after {
 /*--Наслов што е на средина и што има црвена линија испод него-->*/
 
 /*Петтиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
-.fifth img {
-    min-height: 407px;
-    min-width: 741px;
-}
 
 .fifth p {
     font-size: 16px;
     font-weight: 600;
     line-height: 29.79px;
-    margin-right: 50px;
     border: 2px solid #BF0000;
     padding: 20px;
     border-radius: 15px;
@@ -308,11 +364,6 @@ span::after {
 /*Петтиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
 
 /*Шестиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
-.six img {
-    min-width: 550px;
-    min-height: 310px;
-    margin-right: 50px;
-}
 
 .six p {
     font-size: 16px;
@@ -326,7 +377,6 @@ span::after {
     border-radius: 5px;
     text-align: center;
     max-width: 581px;
-    margin-left: 155px;
 }
 
 .six ul li {
@@ -336,9 +386,9 @@ span::after {
 }
 
 /*Div што ја содржи листата*/
-.six .six-2 {
+.six-2 {
     border: 2px solid #BF0000;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px;
     max-width: 831px;
 }
@@ -348,24 +398,31 @@ span::after {
 /*Шестиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
 
 /*Седмиот"box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
-.seven img {
-    min-width: 550px;
-    min-height: 310px;
-    margin-left: 20px;
-}
-
 
 .seven h1 {
     font-size: 24px;
     font-weight: 700;
-    min-width: 831px;
+    max-width: 831px;
     border: 2px solid #BF0000;
     padding: 15px;
     border-radius: 5px;
     text-align: center;
 }
 
-.seven .six-2 {
+.seven p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.87px;
+}
+
+.seven ul li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32.11px;
+}
+
+
+.six-2 {
     border: 2px solid #BF0000;
     padding: 20px;
     border-radius: 15px;
@@ -481,3 +538,87 @@ footer {
 /*Копирајт*/
 
 /*footer*/
+
+
+@media only screen and (max-width: 600px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .second .image {
+        order: 2;
+    }
+
+    .second .phone {
+        order: 1;
+    }
+
+    .fourth .image {
+        order: 2;
+    }
+
+    .fourth .phone {
+        order: 1;
+    }
+
+    .six .image {
+        order: 2;
+    }
+
+    .six .phone {
+        order: 1;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .phone {
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .Main-paragraph {
+        min-width: 300px;
+    }
+
+    img {
+        min-width: 300px;
+    }
+
+    .six h1 {
+        max-width: 580px;
+    }
+
+    .six-2 {
+        font-size: 15px;
+    }
+
+    .six ul li {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20.11px;
+    }
+
+    .seven ul li {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20.11px;
+    }
+
+    span::after {
+        content: '';
+        display: block;
+        background-color: #BF0000;
+        height: 5px;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        margin-top: 10px;
+    }
+}
