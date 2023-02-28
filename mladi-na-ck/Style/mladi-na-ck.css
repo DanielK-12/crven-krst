@@ -516,23 +516,30 @@ footer {
 
 
 /*Копирајт*/
-.linkovi {
-    position: absolute;
-    bottom: 0;
+.copyright {
     display: flex;
     justify-content: space-between;
+    background-color: #bf0000;
+    align-items: center;
+    min-width: 1920px;
+    height: 100px;
+    padding: 50px;
+    align-items: center;
 }
 
 
-.linkovi p {
-    font-size: 24px;
+.copyright p {
+    font-size: 16px;
     color: #FFFFF6;
     font-weight: 600;
 }
 
-.linkovi a {
+.copyright a {
+    font-size: 16px;
+    font-weight: 600;
     text-decoration: none;
     color: #FFFFF6;
+    margin: 5px;
 }
 
 /*Копирајт*/
