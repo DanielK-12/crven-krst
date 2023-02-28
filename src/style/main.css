@@ -401,6 +401,7 @@ h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 32.68px;
+  text-transform: uppercase;
   color: #2F2F2F;
   border-bottom: solid 3px #BF0000;
   box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
@@ -449,6 +450,11 @@ h4 {
   padding: 30px;
 }
 
+.vesti-box::-webkit-scrollbar,
+.kalendar-box::-webkit-scrollbar {
+  display: none;
+}
+
 .kalendar {
   display: flex;
   flex-direction: column;
@@ -460,18 +466,21 @@ h4 {
 
 .kalendar-box {
   display: flex;
+  flex-direction: column;
   border: solid 3px #BF0000;
   height: 552px;
   width: 443px;
   overflow: hidden;
+  overflow-y: auto;
   border-radius: 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px;
 }
 
 .cards {
   display: flex;
   width: 803px;
-  height: 130px;
+  max-height: 135px;
   border-radius: 5px;
   background-image: linear-gradient(270deg, rgba(191, 0, 0, 0.12)0%, rgba(217, 217, 217, 0)72.79%);
   background-size: cover;
@@ -480,9 +489,11 @@ h4 {
 
 .cards-content {
   display: flex;
+  flex-wrap: wrap;
   flex-flow: column;
   justify-content: space-between;
-  padding: 20px;
+  height: 100%;
+  padding: 0 20px 20px;
 }
 
 h5 {
@@ -492,11 +503,29 @@ h5 {
   color: #2F2F2F;
 }
 
-.cards-content>p {
+.cards-content>p,
+.kalendar-content>p {
   font-size: 12px;
   font-weight: 400;
   line-height: 16.34px;
   color: #2F2F2F;
+}
+
+.kalendar-content {
+  padding: 0 20px 20px;
+}
+
+.cards-content>.more {
+  align-self: flex-end;
+}
+
+.kalendar-cards {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #FFFFF6;
+  height: 120px;
 }
 
 /* kopcinja */
