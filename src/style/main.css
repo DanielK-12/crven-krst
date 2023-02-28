@@ -9,7 +9,6 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 body {
-  background-color: aliceblue;
   margin: 0 auto;
   font-family: "open sans", sans-serif;
   height: 100vh;
@@ -526,6 +525,28 @@ h5 {
   width: 100%;
   background-color: #FFFFF6;
   height: 120px;
+}
+
+/* partners section */
+
+.partners-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.partners {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.partners>img {
+  display: flex;
+  margin: 30px;
 }
 
 /* kopcinja */
