@@ -484,17 +484,11 @@ footer {
 
 .buttons ul li {
     display: inline-block;
-    flex-direction: row;
     margin: 10px;
 }
 
 .buttons ul li a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     padding: 15px 30px;
-    height: 46px;
     background: #FFFFF6;
     border-radius: 5px;
     text-decoration: none;
