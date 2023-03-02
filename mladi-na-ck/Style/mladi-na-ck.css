@@ -1,0 +1,643 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    background-color: aliceblue;
+    margin: 0 auto;
+    font-family: "open sans", sans-serif;
+}
+
+/*Навигацијата запоцнува тука*/
+nav {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    height: 160px;
+    border-bottom: solid #BF0000 3px;
+    padding: 13px 69px 13px 74px;
+    background-color: #FFFFF6;
+    z-index: 999;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+
+.navLinks>ul>li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.navLinks>ul>li>a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2F2F2F;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.navLinks>ul>li>a::after {
+    content: '';
+    display: flex;
+    background-color: #BF0000;
+    height: 3px;
+    width: 0;
+    transition: 1s ease;
+}
+
+.navLinks>ul>li>a:hover::after {
+    width: 100%;
+}
+
+
+.navLinks>ul>li:not(.active-list):hover {
+    transform: translate(0, -5px);
+}
+
+
+.active::after {
+    content: '';
+    display: flex;
+    background-color: #BF0000;
+    height: 3px;
+    width: 100% !important;
+}
+
+.active {
+    position: relative;
+    content: "";
+    top: -5px;
+    width: 100%;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin: 4px 2px;
+    height: 50px;
+    width: 50px;
+    vertical-align: bottom;
+}
+
+.mglass {
+    display: inline-block;
+    pointer-events: none;
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+    position: relative;
+    font-size: 22px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.search:focus+.searchbutton {
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    background-color: white;
+    color: black;
+}
+
+.search {
+    position: absolute;
+    left: 49px;
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 0;
+    height: 100%;
+    z-index: 10;
+    transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+}
+
+.search:focus {
+    width: 100px;
+    padding: 0 16px 0 0;
+}
+
+.expandright {
+    left: auto;
+    right: 49px;
+}
+
+.expandright:focus {
+    padding: 0 0 0 16px;
+}
+
+.flags {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lang {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/*Навигацијата завршува тука*/
+
+/*Копче што е во навигацијата со има "Донации*/
+.btn {
+    display: inline-block;
+    background-color: #BF0000;
+    color: #FFFFFF;
+    padding: 15px 35px;
+    border: solid 2px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 22px;
+    margin: 4px 2px;
+}
+
+.btn-primary:hover {
+    background-color: #DC0303;
+    color: #FFFFFF;
+}
+
+.btn-primary:active {
+    background-color: #FF1F1F;
+    color: #FFFFFF;
+}
+
+/*Копче што е во навигацијата со има "Донации*/
+
+
+/*Слика за hero секцијата*/
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/DSC_0068\ 2.png);
+    width: 100%;
+    min-height: 492px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-image h1 {
+    color: #FFFFF6;
+    font-weight: 700;
+    line-height: 87px;
+    font-size: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*Слика за hero секцијата*/
+
+
+/*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
+.hero-content {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1920px;
+    padding-bottom: 80px;
+}
+
+/*Најпрвиот параграф од hero секцијата*/
+.Main-paragraph {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27.24px;
+
+}
+
+/*Најпрвиот параграф од hero секцијата*/
+
+
+/* "box"  содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box img {
+    background-size: cover;
+    width: 100%;
+    max-height: 550px;
+    background-position: center;
+}
+
+/* "box"  содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+/*Првиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+.first p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29.79px;
+    border: 2px solid #BF0000;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+.first h1 {
+    border: 2px solid #BF0000;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 581px;
+}
+
+/*Првиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+/*Вториот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+.second p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29.79px;
+    border: 2px solid #BF0000;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+/*Вториот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+/*Третиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+.third p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29.79px;
+    border: 2px solid #BF0000;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+/*Третиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+/*Четвртиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+.fourth h1 {
+    max-width: 832px;
+    font-size: 24px;
+    border: 2px solid #BF0000;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.fourth p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 29.79px;
+    border: 2px solid #BF0000;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+/*Четвртиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+
+/*--Наслов што е на средина и што има црвена линија испод него-->*/
+h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+span::after {
+    content: '';
+    display: block;
+    background-color: #BF0000;
+    height: 5px;
+    width: 13%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin-top: 10px;
+}
+
+/*--Наслов што е на средина и што има црвена линија испод него-->*/
+
+/*Петтиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+.fifth p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 29.79px;
+    border: 2px solid #BF0000;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+/*Петтиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+/*Шестиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+.six p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.87px;
+}
+
+.six h1 {
+    border: 2px solid #BF0000;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 581px;
+}
+
+.six ul li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32.11px;
+}
+
+/*Div што ја содржи листата*/
+.six-2 {
+    border: 2px solid #BF0000;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+/*Div што ја содржи листата*/
+
+/*Шестиот "box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+/*Седмиот"box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+.seven h1 {
+    font-size: 24px;
+    font-weight: 700;
+    max-width: 831px;
+    border: 2px solid #BF0000;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.seven p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.87px;
+}
+
+.seven ul li {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 32.11px;
+}
+
+
+.six-2 {
+    border: 2px solid #BF0000;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 831px;
+}
+
+/*Седмиот"box div" што содржи параграф и слика. Десно слика лево параграф и обратно*/
+
+/*Насловот и параграфот што се на дното на секцијата*/
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.68px;
+    color: #2F2F2F;
+}
+
+.last {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 38.84px;
+    color: #2F2F2F;
+}
+
+/*Насловот и параграфот што се на дното на секцијата*/
+
+/*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
+
+/*Footer*/
+footer {
+    background-color: #bf0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 437px;
+    position: relative;
+    bottom: 0;
+    padding: 0px 10px 0px 10px;
+    padding: 100px;
+}
+
+
+/*Div што го содржи логото и листата со линкови*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+/*Div што го содржи логото и листата со линкови*/
+
+/*Листата со линкови*/
+.container ul {
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.buttons ul li {
+    display: inline-block;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.buttons ul li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    height: 46px;
+    background: #FFFFF6;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Open Sans' sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 22px;
+    color: #BF0000;
+}
+
+.buttons ul li a:hover {
+    background: #FFFFF6;
+    color: #2F2F2F;
+}
+
+/*Листата со линкови*/
+
+
+/*Копирајт*/
+.copyright {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+}
+
+
+.copyright p {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #FFFFF6;
+    font-weight: 600;
+    align-items: center;
+}
+
+.copyright a {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFF6;
+    margin: 5px;
+}
+
+/*Копирајт*/
+/*footer*/
+
+
+@media only screen and (max-width: 600px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .second .image {
+        order: 2;
+    }
+
+    .second .phone {
+        order: 1;
+    }
+
+    .fourth .image {
+        order: 2;
+    }
+
+    .fourth .phone {
+        order: 1;
+    }
+
+    .six .image {
+        order: 2;
+    }
+
+    .six .phone {
+        order: 1;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .phone {
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .Main-paragraph {
+        min-width: 300px;
+    }
+
+    img {
+        min-width: 300px;
+    }
+
+    .six h1 {
+        max-width: 580px;
+    }
+
+    .six-2 {
+        font-size: 15px;
+    }
+
+    .six ul li {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20.11px;
+    }
+
+    .seven ul li {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20.11px;
+    }
+
+    span::after {
+        content: '';
+        display: block;
+        background-color: #BF0000;
+        height: 5px;
+        width: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        margin-top: 10px;
+    }
+}
