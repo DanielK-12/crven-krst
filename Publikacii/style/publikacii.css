@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  font-family: "open sans", sans-serif;
+}
+
+/*Навигацијата запоцнува тука*/
+nav {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  height: 160px;
+  border-bottom: solid #BF0000 3px;
+  padding: 13px 69px 13px 74px;
+  background-color: #FFFFF6;
+  z-index: 999;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+
+.navLinks>ul>li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.navLinks>ul>li>a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2F2F2F;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.navLinks>ul>li>a::after {
+  content: '';
+  display: flex;
+  background-color: #BF0000;
+  height: 3px;
+  width: 0;
+  transition: 1s ease;
+}
+
+.navLinks>ul>li>a:hover::after {
+  width: 100%;
+}
+
+
+.navLinks>ul>li:not(.active-list):hover {
+  transform: translate(0, -5px);
+}
+
+
+.active::after {
+  content: '';
+  display: flex;
+  background-color: #BF0000;
+  height: 3px;
+  width: 100% !important;
+}
+
+.active {
+  position: relative;
+  content: "";
+  top: -5px;
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  margin: 4px 2px;
+  height: 50px;
+  width: 50px;
+  vertical-align: bottom;
+}
+
+.mglass {
+  display: inline-block;
+  pointer-events: none;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+  position: relative;
+  font-size: 22px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.search:focus+.searchbutton {
+  transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+
+.search {
+  position: absolute;
+  left: 49px;
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 0;
+  height: 100%;
+  z-index: 10;
+  transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+}
+
+.search:focus {
+  width: 100px;
+  padding: 0 16px 0 0;
+}
+
+.expandright {
+  left: auto;
+  right: 49px;
+}
+
+.expandright:focus {
+  padding: 0 0 0 16px;
+}
+
+.flags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.lang {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/*Навигацијата завршува тука*/
+
+/*Копче што е во навигацијата со има "Донации*/
+.btn {
+  display: inline-block;
+  background-color: #BF0000;
+  color: #FFFFFF;
+  padding: 15px 35px;
+  border: solid 2px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 22px;
+  margin: 4px 2px;
+}
+
+.btn-primary:hover {
+  background-color: #DC0303;
+  color: #FFFFFF;
+}
+
+.btn-primary:active {
+  background-color: #FF1F1F;
+  color: #FFFFFF;
+}
+
+/*Копче што е во навигацијата со има "Донации*/
+
+
+/*Контејнер што ги содржи акотдионите*/
+#myaccordion {
+  width: 80%;
+  margin: 20px auto;
+  background: white;
+}
+
+.accordion-tab {
+  color: white;
+  background: #920000;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 107px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.accordion-tab h2 {
+  font-size: 40px;
+  margin: 0;
+}
+
+
+
+.accordion-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 90%;
+}
+
+.accordion-content a {
+  list-style: none;
+  font-size: 20px;
+  color: #2F2F2F;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.test {
+  background: transparent;
+  border: 5px solid #920000;
+  border-radius: 15px;
+  color: #BF0000;
+}
+
+/*Контејнер што ги содржи акотдионите*/
+
+
+.hero img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+/*Footer*/
+footer {
+  background-color: #bf0000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 437px;
+  position: relative;
+  bottom: 0;
+  padding: 0px 10px 0px 10px;
+  padding: 100px;
+}
+
+
+/*Div што го содржи логото и листата со линкови*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+/*Div што го содржи логото и листата со линкови*/
+
+/*Листата со линкови*/
+.container ul {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.buttons ul li {
+  display: inline-block;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.buttons ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  height: 46px;
+  background: #FFFFF6;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Open Sans' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 22px;
+  color: #BF0000;
+}
+
+.buttons ul li a:hover {
+  background: #FFFFF6;
+  color: #2F2F2F;
+}
+
+/*Листата со линкови*/
+
+
+/*Копирајт*/
+.copyright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+}
+
+
+.copyright p {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  color: #FFFFF6;
+  font-weight: 600;
+  align-items: center;
+}
+
+.copyright a {
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #FFFFF6;
+  margin: 5px;
+}
+
+/*Копирајт*/
+/*footer*/
