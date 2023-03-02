@@ -580,38 +580,49 @@ a {
 .banner {
   background-image: url("/src/Dejnosti/img/banner.png");
   min-height: 447px;
+  align-self: center;
+  display: flex;
 }
+/* accordions */
 #myaccordion {
-  width: 40%;
-  margin: 20px 350px 20px 350px;
+  width: 80%;
+  margin: 20px auto;
   background: white;
 }
 .accordion-tab .accordion-toogle {
   display: none;
 }
-
-.accordion-tab > label {
+.accordion-tab {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.accordion-tab>label {
   color: white;
   background: #920000;
-  font-size: 16px;
+  font-size: 40px;
   position: relative;
   display: block;
-  padding: 12px 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 107px;
   cursor: pointer;
-  border-top: 10px solid white;
-  
+  margin-bottom: 20px;
+  font-weight: 700;
+  border-radius: 10px;
 }
-.accordion-tab > .accordion-content {
+.accordion-content a {
+  margin-bottom: 13px;
+}
+.accordion-tab>.accordion-content {
   max-height: 0;
   transition: all 0.2s;
   overflow: hidden;
 }
-.accordion-tab > .accordion-content a {
-  padding: 10px 20px;
-  color: #2F2F2F;
-}
-.accordion-tab > .accordion-toogle:checked ~ .accordion-content {
+.accordion-tab>.accordion-toogle:checked~.accordion-content {
   max-height: 100vh;
+  margin-bottom: 20px;
+  padding-left: 107px;
 }
 
 /* footer */
