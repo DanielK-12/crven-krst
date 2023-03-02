@@ -1,0 +1,702 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body {
+  margin: 0 auto;
+  font-family: "open sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 160px;
+  border-bottom: solid #BF0000 3px;
+  padding: 13px 69px 13px 74px;
+  gap: 20px;
+  background-color: #FFFFF6;
+  z-index: 999;
+  justify-content: space-between;
+}
+.sticky {
+  position: sticky;
+  top: 0;
+}
+.navLinks>ul>li {
+  display: inline-block;
+  margin: 10px;
+}
+.navLinks>ul>li>a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2F2F2F;
+  font-weight: 700;
+  font-size: 16px;
+}
+.navLinks>ul>li>a::after {
+  content: '';
+  display: flex;
+  background-color: #BF0000;
+  height: 3px;
+  width: 0;
+  transition: 1s ease;
+}
+.navLinks>ul>li>a:hover::after {
+  width: 100%;
+}
+.navLinks>ul>li:not(.active-list):hover {
+  transform: translate(0, -5px);
+}
+.active::after {
+  content: '';
+  display: flex;
+  background-color: #BF0000;
+  height: 3px;
+  width: 100% !important;
+}
+.active {
+  position: relative;
+  content: "";
+  top: -5px;
+  width: 100%;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+/* search*/
+.search-container {
+  position: relative;
+  display: inline-block;
+  margin: 4px 2px;
+  height: 50px;
+  width: 50px;
+  vertical-align: bottom;
+}
+.mglass {
+  display: inline-block;
+  pointer-events: none;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+.searchbutton {
+  position: relative;
+  font-size: 22px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.search:focus+.searchbutton {
+  transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+.search {
+  position: absolute;
+  left: 49px;
+  /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 0;
+  height: 100%;
+  z-index: 10;
+  transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+}
+.search:focus {
+  width: 100px;
+  /* Bar width+1px */
+  padding: 0 16px 0 0;
+}
+.expandright {
+  left: auto;
+  right: 49px;
+  /* Button width-1px */
+}
+.expandright:focus {
+  padding: 0 0 0 16px;
+}
+/* flags section */
+.flags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lang {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+/* main container */
+.hero-container {
+  display: flex;
+  width: 100%;
+  height: 816px;
+}
+.hero-image {
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/hero-image-flag.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  padding-bottom: 20px;
+}
+.hero-content {
+  position: absolute;
+  margin-left: 260px;
+  margin-top: 175px;
+}
+h1 {
+  font-size: 54px;
+  color: #DC0303;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #2F2F2F;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 74px;
+}
+.hero-content>p {
+  font-weight: 700px;
+  font-style: normal;
+  font-size: 24px;
+  color: #FFFFFF;
+  line-height: 140%;
+  text-align: left;
+  overflow: hidden;
+  max-width: 47ch;
+}
+.dots {
+  display: flex;
+  width: 200px;
+  align-self: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.dots>button {
+  background: #FFFFFF;
+  border-radius: 50%;
+  border: none;
+  width: 20px;
+  height: 20px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.dots .active-dot {
+  background: #BF0000;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+/* widgets section */
+.widgets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.crven-krst-logo {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+.widget-container {
+  display: flex;
+  align-self: center;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.widget-box {
+  display: flex;
+  flex-direction: column;
+  width: 397px;
+  height: 470px;
+}
+.widget-box>a {
+  align-self: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  color: #2F2F2F;
+  text-decoration: none;
+  padding-top: 20px;
+}
+.widget-box>a:hover {
+  color: #BF0000;
+}
+.widget-btn {
+  margin-bottom: 100px;
+}
+.box-one,
+.box-two,
+.box-three {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 397px;
+  height: 362px;
+  border-radius: 15px;
+  border: solid 3px #bf0000;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+.box-two {
+  background-image: url(../img/sl_050622_50190_20\ 1.png);
+}
+.box-three {
+  background-image: url(../img/320703205.png);
+}
+.box-one:before,
+.box-two:before,
+.box-three:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  transition: height 0.3s ease-out;
+  background: linear-gradient(to bottom, transparent 0%, grey 100%);
+}
+.box-one:hover::before,
+.box-two:hover::before,
+.box-three:hover:before {
+  height: 100%;
+}
+/* volonter section */
+.volonter-container {
+  width: 100%;
+  height: 735px;
+  display: flex;
+  flex-direction: column;
+}
+.volonter-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/volunteers-young-people-red-tshirts-looking-joyful-happy\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.volonter-h {
+  color: #FFFFFF;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 87px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.volonter-p {
+  width: 640px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.volonter-btn {
+  display: flex;
+  flex-direction: column;
+}
+.volonter-img>.dots {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.volonter-btn-one,
+.volonter-btn-two {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-self: center;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+  text-transform: uppercase;
+  color: #2F2F2F;
+  border-bottom: solid 3px #BF0000;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+}
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+  color: #2F2F2F;
+  padding: 30px;
+}
+/* vesti/novosti/kalendar section */
+.vesti-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 100px;
+}
+.vesti {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  height: 670px;
+  width: 873px;
+  border-radius: 5px;
+  align-items: start;
+}
+.vesti-box {
+  display: flex;
+  flex-direction: column;
+  border: solid 3px #BF0000;
+  align-items: center;
+  height: 552px;
+  width: 870px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+.vesti-box::-webkit-scrollbar,
+.kalendar-box::-webkit-scrollbar {
+  display: none;
+}
+.kalendar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex: 1;
+  height: 670px;
+  width: 443px;
+}
+.kalendar-box {
+  display: flex;
+  flex-direction: column;
+  border: solid 3px #BF0000;
+  height: 552px;
+  width: 443px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+.cards {
+  display: flex;
+  width: 803px;
+  max-height: 135px;
+  border-radius: 5px;
+  background-image: linear-gradient(270deg, rgba(191, 0, 0, 0.12)0%, rgba(217, 217, 217, 0)72.79%);
+  background-size: cover;
+  margin-bottom: 30px;
+}
+.cards-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 20px 20px;
+}
+h5 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16.34px;
+  color: #2F2F2F;
+}
+.cards-content>p,
+.kalendar-content>p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.34px;
+  color: #2F2F2F;
+}
+.kalendar-content {
+  padding: 0 20px 20px;
+}
+.cards-content>.more {
+  align-self: flex-end;
+}
+.kalendar-cards {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+  background-color: #FFFFF6;
+  height: 120px;
+}
+/* partners section */
+.partners-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.partners {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+.partners>img {
+  display: flex;
+  margin: 30px;
+}
+/* kopcinja */
+.kopcinja {
+  padding: 20px;
+}
+
+
+
+/* Донации копче со додадени ховер и актив ефекти */
+.btn {
+  display: inline-block;
+  background-color: #BF0000;
+  color: #FFFFFF;
+  padding: 15px 35px;
+  border: solid 2px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 22px;
+  margin: 4px 2px;
+}
+.btn-primary:hover {
+  background-color: #DC0303;
+  color: #FFFFFF;
+}
+.btn-primary:active {
+  background-color: #FF1F1F;
+  color: #FFFFFF;
+}
+/* Menu text копче */
+.btn-secondary {
+  background: #FFFFF6;
+  color: #BF0000;
+}
+.btn-secondary:hover {
+  background: #FFFFF6;
+  color: #2F2F2F;
+}
+.btn-secondary:active {
+  background: #BF0000;
+  color: #FFFFF6;
+}
+/* Стани волонтер/член копчиња */
+.btn-volonter {
+  background: #BF0000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 2px solid #BF0000;
+  color: #FFFFFF;
+}
+.btn-volonter:active {
+  background: #FFFFFF;
+  border: 2px solid #BF0000;
+  color: #BF0000;
+}
+/* Online курсеви копче */
+.btn-kurs {
+  background: #FFFFFF;
+  height: 56px;
+  border: 2px solid #BF0000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #BF0000;
+}
+.btn-kurs:active {
+  background: #BF0000;
+  color: #FFFFFF;
+}
+/* Организација и развој линкови */
+.org-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #2F2F2F;
+  text-transform: uppercase;
+  min-width: 258px;
+  min-height: 27px;
+}
+.org-link:hover {
+  color: #BF0000;
+}
+.card-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #2F2F2F;
+  text-decoration: none;
+}
+.card-text:hover {
+  color: #BF0000;
+}
+/* Повеќе линкче */
+.more,
+a {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #bf0000;
+}
+.more:active,
+.more>a:active,
+.more:hover,
+.more>a:hover {
+  color: #2F2F2F;
+}
+/* дејности */
+/* banner dejnosti */
+.banner {
+  background-image: url("/src/Dejnosti/img/banner.png");
+  min-height: 447px;
+  align-self: center;
+  display: flex;
+}
+/* accordions */
+#myaccordion {
+  width: 80%;
+  margin: 20px auto;
+  background: white;
+}
+.accordion-tab .accordion-toogle {
+  display: none;
+}
+.accordion-tab {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.accordion-tab>label {
+  color: white;
+  background: #920000;
+  font-size: 40px;
+  position: relative;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 107px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.accordion-content a {
+  margin-bottom: 13px;
+}
+.accordion-tab>.accordion-content {
+  max-height: 0;
+  transition: all 0.2s;
+  overflow: hidden;
+}
+.accordion-tab>.accordion-toogle:checked~.accordion-content {
+  max-height: 100vh;
+  margin-bottom: 20px;
+  padding-left: 107px;
+}
+
+/* footer */
+footer {
+  background-color: #bf0000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+  min-height: 437px;
+  position: relative;
+  bottom: 0;
+  padding: 0px 10px 0px 10px;
+  padding: 100px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.container ul {
+  width: 100%;
+}
+.buttons {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  min-width: 1400px;
+  overflow: hidden;
+  font-size: 12px;
+}
+.buttons ul li {
+  display: inline-block;
+  flex-direction: row;
+  margin: 10px;
+}
+.buttons ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  height: 46px;
+  background: #FFFFF6;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Open Sans' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 22px;
+  color: #BF0000;
+}
+.buttons ul li a:hover {
+  background: #FFFFF6;
+  color: #2F2F2F;
+}
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+    margin: auto;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-content>p {
+    font-size: 12px;
+    min-width: 40ch;
+  }
+  .hero-image {
+    display: flex;
+    align-items: flex-start;
+  }
+}
