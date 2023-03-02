@@ -589,9 +589,7 @@ a {
 .accordion-tab .accordion-toogle {
   display: none;
 }
-.accordion-tab {
-  border-radius: 10px;
-}
+
 .accordion-tab > label {
   color: white;
   background: #920000;
