@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="/src/style/main.css">
   <link rel="stylesheet" href="style/cooperative-cooperation.css">
 
   <title>Корпоративна соработка</title>
@@ -155,7 +155,7 @@
     </div>
     <div class="navLinks">
       <ul>
-        <li class="active-list">
+        <li>
           <a href="../index.html" class="active navLink">Почетна</a>
         </li>
         <li>
@@ -169,7 +169,8 @@
         </li>
         <li><a href="../Dejnosti/dejnosti.html" class="navLink">Дејности</a></li>
         <li><a href="/mladi-na-ck/mladi-na-ck.html" class="navLink">Млади на ЦК</a></li>
-        <li><a href="../cooporative-cooperation/cooporative-cooperation.html" class="navLink">Корпоративна
+        <li class="active-list"><a href="../cooporative-cooperation/cooporative-cooperation.html"
+            class="navLink">Корпоративна
             соработка</a></li>
         <li><a href="/Publikacii/publikacii.html" class="navLink">Публикации</a></li>
         <li><a href="#" class="navLink">Контакт</a>
@@ -177,22 +178,24 @@
       </ul>
     </div>
     <div class="right">
-      <div class="search">
-        <form action="" method="" class="Search">
-
-          <label class="icon fa fa-search" for="search"></label>
-          <input type="text" placeholder="Search                          " class="underline" id="search">
-
+      <div class="search-container">
+        <form action="/search" method="get">
+          <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+          <div class="circle"><label class="button searchbutton" for="searchright"><span
+                class="mglass">&#9906;</span></label></div>
         </form>
       </div>
-      <div class="donations">
-        <button></button>
-        <div class="lang"></div>
+      <div class="flags">
+        <a href="#" class="btn btn-primary">Донации</a>
+        <div class="lang">
+          <a href="#"><img src="../img/Macedonia.png" alt="macedonian-flag"></a>
+          <a href="#"><img src="../img/United States of America.png" alt="american-flag"></a>
+          <a href="#"><img src="../img/Albania.png" alt="albanian-flag"></a>
+        </div>
       </div>
 
     </div>
   </nav>
-
   <main>
     <h1 class="page-title">Корпоративна соработка</h1>
     <articles>
@@ -201,77 +204,117 @@
         <h2>Донација на компанијата НОВАРТИС</h2>
         <p>На 14 октомври 2016 годна во просториите на Црвениот крст на РМ беше организиран настан за официјално
           предавање...</p>
-        <a href="#">повеќе &#8594;</a>
+        <div class="more">
+          <a href="#">Повеќе</a>
+
+          <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </div>
       </article>
       <article class="cooperative-cooperation-article">
         <img class="card-thumb" src="assets/images/stari-lica-1000x560 1.png">
         <h2>Недела на грижа на старите лица</h2>
         <p>Црвениот крст на Република Македонија оваа година традиционалната „Недела на грижа на старите лица“ ја
           одбележува од 21...</p>
-        <a href="#">повеќе &#8594;</a>
+        <div class="more">
+          <a href="#">Повеќе</a>
+
+          <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </div>
       </article>
       <article class="cooperative-cooperation-article">
         <img class="card-thumb" src="assets/images/DSCN03171-1000x560 1.png">
         <h2>Континуирана плодна соработка со Комерцијална банка АД Скопје</h2>
         <p>На 5-ти декември 2012 година Црвен крст на Република Македонија на ЕВН Македонија АД и Комерцијалана Банка
           АД...</p>
-        <a href="#">повеќе &#8594;</a>
+        <div class="more">
+          <a href="#">Повеќе</a>
+
+          <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </div>
       </article>
       <article class="cooperative-cooperation-article">
         <img class="card-thumb" src="assets/images/DSCN1828-1000x560 1.png">
         <h2>Подобрување на социјализацијата на деца...</h2>
         <p>Црвениот крст на Република Македонија во рамките на проектот „Подобрување на социјализацијата на деца и млади
           со посебни...</p>
-        <a href="#">повеќе &#8594;</a>
+        <div class="more">
+          <a href="#">Повеќе</a>
+
+          <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </div>
       </article>
       <article class="cooperative-cooperation-article">
         <img class="card-thumb" src="assets/images/ck-1000x560 1.png">
         <h2>Црвениот крст на Република Македонија додели признанија...</h2>
         <p>Црвен крст на Република Македонија на 12.12.2013 година во 11:00 часот ги додели признанијата „Златен медал“
           и „Бронзен...</p>
-        <a href="#">повеќе &#8594;</a>
+        <div class="more">
+          <a href="#">Повеќе</a>
+
+          <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </div>
       </article>
       <article class="cooperative-cooperation-article">
         <img class="card-thumb" src="assets/images/DSCN03171-1000x560 1.png">
         <h2>Подобрување на социјализацијата на деца...</h2>
         <p>Црвениот крст на Република Македонија во рамките на проектот: „Подобрување на социјализацијата на деца и
           млади...</p>
-        <a href="#">повеќе &#8594;</a>
+        <div class="more">
+          <a href="#">Повеќе</a>
+
+          <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </div>
       </article>
       <article class="cooperative-cooperation-article">
         <img class="card-thumb" src="assets/images/DSCN03171-1000x560 1.png">
         <h2>Континуирана плодна соработка со Комерцијална банка АД Скопје</h2>
         <p>Црвениот крст на Република Македонија во соработка со Заводот за социјални дејности петта година во
           континуитет имплементира...</p>
-        <a href="#">повеќе &#8594;</a>
+        <div class="more">
+          <a href="#">Повеќе</a>
+
+          <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </div>
       </article>
       <article class="cooperative-cooperation-article">
         <img class="card-thumb" src="assets/images/ck-1000x560 1.png">
         <h2>Црвен крст на Република Македонија додели „Златен...</h2>
         <p>На 5-ти декември 2012 година Црвен крст на Република Македонија на ЕВН Македонија АД и Комерцијалана Банка
           АД...</p>
-        <a href="#">повеќе &#8594;</a>
+        <div class="more">
+          <a href="#">Повеќе</a>
+
+          <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+          </svg>
+        </div>
       </article>
     </articles>
   </main>
 
-  <!-- buttons -->
-  <div class="kopcinja">
-    <a href="#" class="donationsBtn">Донации</a>
-    <a href="#" class="menuText">Menu text</a>
-    <a href="#" class="become">Стани волонтер</a>
-    <a href="#" class="course">Online курсеви за Волонтери</a>
-    <a href="#" class="org">организација и развој</a>
-    <a href="#" class="cardText">Локации на Црвен Крст на <br>Република Северна Македонија</a>
-    <div class="more">
-      <a href="#">Повеќе</a>
-      <svg width="15px" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-        stroke="currentColor" class="w-6 h-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-      </svg>
 
-    </div>
-  </div>
 
   <footer>
     <div class="container">

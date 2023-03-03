@@ -1,14 +1,16 @@
 body {
     background: #FFFFFF;
 }
+
 main {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
-    
+
 }
+
 .page-title {
     color: #2F2F2F;
     font-style: normal;
@@ -28,10 +30,11 @@ main articles {
     align-self: center;
     justify-content: center;
 }
+
 .card-thumb {
-    object-fit:cover;
-    max-height:200%
-} 
+    object-fit: cover;
+    max-height: 200%
+}
 
 .cooperative-cooperation-article {
     display: flex;
@@ -45,7 +48,7 @@ main articles {
     border-radius: 10px;
     min-width: 300px;
 
-    
+
 }
 
 .cooperative-cooperation-article img {
@@ -55,10 +58,11 @@ main articles {
     margin: 0px;
     padding: 0px;
     object-fit: cover;
-    max-height; 
+    max-height: 614px;
     overflow: hidden;
 
 }
+
 .cooperative-cooperation-article h2 {
     font-family: 'Open Sans';
     font-style: normal;
@@ -84,14 +88,31 @@ main articles {
     min-height: 4.2em;
 }
 
-.cooperative-cooperation-article a {
+.cooperative-cooperation-article>.more {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 22px;
-    text-align: justify;
+    text-align: left;
     color: #BF0000;
     padding: 10px 10px;
     align-self: flex-end;
+    justify-self: flex-end;
+}
+
+/* Повеќе линкче */
+.more,
+a {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #bf0000;
+}
+
+.more:active,
+.more>a:active,
+.more:hover,
+.more>a:hover {
+    color: #2F2F2F;
 }

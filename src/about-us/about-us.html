@@ -155,11 +155,11 @@
     </div>
     <div class="navLinks">
       <ul>
-        <li class="active-list">
+        <li>
           <a href="../index.html" class="active navLink">Почетна</a>
         </li>
-        <li>
-          <a href="../src/about-us/about-us.html" class="navLink">Кои сме ние</a>
+        <li class="active-list">
+          <a href="../about-us/about-us.html" class="navLink">Кои сме ние</a>
         </li>
         <li>
           <a href="#" class="navLink">Норматива</a>
@@ -177,17 +177,20 @@
       </ul>
     </div>
     <div class="right">
-      <div class="search">
-        <form action="" method="" class="Search">
-
-          <label class="icon fa fa-search" for="search"></label>
-          <input type="text" placeholder="Search                          " class="underline" id="search">
-
+      <div class="search-container">
+        <form action="/search" method="get">
+          <input class="search expandright" id="searchright" type="search" name="q" placeholder="Search">
+          <div class="circle"><label class="button searchbutton" for="searchright"><span
+                class="mglass">&#9906;</span></label></div>
         </form>
       </div>
-      <div class="donations">
-        <button></button>
-        <div class="lang"></div>
+      <div class="flags">
+        <a href="#" class="btn btn-primary">Донации</a>
+        <div class="lang">
+          <a href="#"><img src="../img/Macedonia.png" alt="macedonian-flag"></a>
+          <a href="#"><img src="../img/United States of America.png" alt="american-flag"></a>
+          <a href="#"><img src="../img/Albania.png" alt="albanian-flag"></a>
+        </div>
       </div>
 
     </div>
