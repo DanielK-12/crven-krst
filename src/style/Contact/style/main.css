@@ -1,0 +1,366 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+  background-color: aliceblue;
+  margin: 0 auto;
+  font-family: "open sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 1920px;
+  height: 160px;
+  border-bottom: solid #BF0000 3px;
+  padding: 13px 69px 13px 74px;
+  gap: 20px;
+  background-color: #FFFFF6;
+  z-index: 999;
+  justify-content: space-between;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+
+.navLinks>ul>li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.navLinks>ul>li>a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2F2F2F;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.navLinks>ul>li>a::after {
+  content: '';
+  display: flex;
+  background-color: #BF0000;
+  height: 3px;
+  width: 0;
+  transition: 1s ease;
+}
+
+.navLinks>ul>li>a:hover::after {
+  width: 100%;
+}
+
+
+.navLinks>ul>li:not(.active-list):hover {
+  transform: translate(0, -5px);
+}
+
+
+.active::after {
+  display: block;
+  background-color: #BF0000;
+  height: 3px;
+  width: 100%;
+  transition: 1s ease;
+}
+
+.active {
+  position: relative;
+  content: "";
+  top: -5px;
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* search*/
+
+.search-container {
+  position: relative;
+  display: inline-block;
+  margin: 4px 2px;
+  height: 50px;
+  width: 50px;
+  vertical-align: bottom;
+}
+
+.mglass {
+  display: inline-block;
+  pointer-events: none;
+  transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+
+.searchbutton {
+  position: relative;
+  font-size: 22px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.search:focus+.searchbutton {
+  transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+}
+
+.search {
+  position: absolute;
+  left: 49px;
+  /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+  background-color: white;
+  outline: none;
+  border: none;
+  padding: 0;
+  width: 0;
+  height: 100%;
+  z-index: 10;
+  transition-duration: 0.4s;
+  -moz-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+}
+
+.search:focus {
+  width: 100px;
+  /* Bar width+1px */
+  padding: 0 16px 0 0;
+}
+
+.expandright {
+  left: auto;
+  right: 49px;
+  /* Button width-1px */
+}
+
+.expandright:focus {
+  padding: 0 0 0 16px;
+}
+
+/* flags section */
+
+.flags {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.lang {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+/* kopcinja */
+
+
+.kopcinja {
+  padding: 20px;
+}
+
+/* Донации копче со додадени ховер и актив ефекти */
+
+.btn {
+  display: inline-block;
+  background-color: #BF0000;
+  color: #FFFFFF;
+  padding: 15px 35px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 22px;
+  margin: 4px 2px;
+}
+
+.btn-primary:hover {
+  background-color: #DC0303;
+  color: #FFFFFF;
+}
+
+.btn-primary:active {
+  background-color: #FF1F1F;
+  color: #FFFFFF;
+}
+
+/* Menu text копче */
+
+.btn-secondary {
+  background: #FFFFF6;
+  color: #BF0000;
+}
+
+.btn-secondary:hover {
+  background: #FFFFF6;
+  color: #2F2F2F;
+}
+
+.btn-secondary:active {
+  background: #BF0000;
+  color: #FFFFF6;
+}
+
+
+/* Стани волонтер/член копчиња */
+
+.btn-volonter {
+  background: #BF0000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 2px solid #BF0000;
+  color: #FFFFFF;
+}
+
+.btn-volonter:active {
+  background: #FFFFFF;
+  border: 2px solid #BF0000;
+  color: #BF0000;
+}
+
+/* Online курсеви копче */
+
+.btn-kurs {
+  background: #FFFFFF;
+  height: 52px;
+  border: 2px solid #BF0000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #BF0000;
+}
+
+.btn-kurs:active {
+  background: #BF0000;
+  color: #FFFFFF;
+}
+
+/* Организација и развој линкови */
+
+.org-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #2F2F2F;
+  text-transform: uppercase;
+  min-width: 258px;
+  min-height: 27px;
+}
+
+.org-link:hover {
+  color: #BF0000;
+}
+
+.card-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #2F2F2F;
+  text-decoration: none;
+}
+
+.card-text:hover {
+  color: #BF0000;
+}
+
+
+/* Повеќе линкче */
+.more,
+a {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #bf0000;
+}
+
+.more:active,
+.more>a:active,
+.more:hover,
+.more>a:hover {
+  color: #2F2F2F;
+}
+
+/* footer */
+
+footer {
+  background-color: #bf0000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 1920px;
+  min-height: 437px;
+  position: relative;
+  bottom: 0;
+  padding: 0px 10px 0px 10px;
+  padding: 100px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  min-width: 1400px;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.buttons ul li {
+  display: inline-block;
+  flex-direction: row;
+  margin: 10px;
+}
+
+.buttons ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  height: 46px;
+  background: #FFFFF6;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: 'Open Sans' sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 22px;
+  color: #BF0000;
+}
+
+.buttons ul li a:hover {
+  background: #FFFFF6;
+  color: #2F2F2F;
+}
