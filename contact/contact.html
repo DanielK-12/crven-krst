@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/publikacii.css">
-  <title>Публикации</title>
+  <link rel="stylesheet" href="../src/style/main.css">
+  <link rel="stylesheet" href="style/contact.css">
+  <title>Контакт</title>
 </head>
 
 <body>
@@ -154,7 +155,7 @@
           <a href="../src/index.html" class="navLink">Почетна</a>
         </li>
         <li>
-          <a href="../about-us/about-us.html" class="navLink">Кои сме ние</a>
+          <a href="../src/about-us/about-us.html" class="navLink">Кои сме ние</a>
         </li>
         <li>
           <a href="#" class="navLink">Норматива</a>
@@ -162,13 +163,12 @@
         <li>
           <a href="#" class="navLink">Принципи</a>
         </li>
-        <li><a href="../Dejnosti/dejnosti.html" class="navLink">Дејности</a></li>
+        <li><a href="../src/Dejnosti/dejnosti.html" class="navLink">Дејности</a></li>
         <li><a href="/mladi-na-ck/mladi-na-ck.html" class="navLink">Млади на ЦК</a></li>
-        <li class="active-list"><a href="/src/cooporative-cooperation/cooporative-cooperation.html"
-            class="navLink">Корпоративна
+        <li><a href="../src/cooporative-cooperation/cooporative-cooperation.html" class="navLink">Корпоративна
             соработка</a></li>
-        <li><a href="/Publikacii/publikacii.html" class="active navLink">Публикации</a></li>
-        <li><a href="#" class="navLink">Контакт</a>
+        <li><a href="/Publikacii/publikacii.html" class="navLink">Публикации</a></li>
+        <li><a href="#" class="navLink active">Контакт</a>
         </li>
       </ul>
     </div>
@@ -191,49 +191,47 @@
 
     </div>
   </nav>
+
   <!--Навигацијата завршува тука-->
-
-  <!--Hero image-->
-  <div class="hero">
-    <img src="image/289650663_3117575808552558_3949990615289654298_n 1.png" alt="">
+  <!-- section contact -->
+  <h3>Контакт</h3>
+  <div class="contact-container">
+    <div class="contact">
+      <div class="address-box">
+        <div class="address-title">Црвен крст на Република Северна Македонија</div>
+        <div class="address-content">
+          <p class="address-content-titles">Адреса:</p>
+          <p class="content">Бул.Кочо Рацин бр 13 1000 - Скопје, Република Северна Македонија</p>
+          <p class="address-content-titles">Телефон:</p>
+          <p class="content">00 389 02 311 43 55</p>
+          <p class="address-content-titles">Факс:</p>
+          <p class="content">00 389 02 323 05 42:</p>
+          <p class="address-content-titles">Е-маил:</p>
+          <p class="content">mrc@redcross.org.mk</p>
+        </div>
+      </div>
+      <div class="input-box">
+        <form>
+          <label for="name" id="name" class="address-content-titles">Вашето име (задолжително)</label>
+          <input type="text" name="name" id="name" class="input-content">
+          <label for="email" id="email" class="address-content-titles">Вашата Е-маил адреса (задолжително)</label>
+          <input type="email" name="email" id="email" class="input-content">
+          <label for="subject" id="subject" class="address-content-titles">Предмет</label>
+          <input type="text" name="name" id="name" class="input-content">
+        </form>
+      </div>
+      <div class="comment-box">
+        <label for="text" class="address-content-titles" rows="10" cols="50">Вашата порака (задолжително)</label>
+        <textarea class="text-area"></textarea>
+      </div>
+    </div>
   </div>
-  <!--Hero image-->
 
-  <!--Контејнер што ги содржи акотдионите-->
-  <div id="myaccordion">
-    <!--1 accordion-->
-    <div class="accordion-tab">
-      <h2>Прирачници</h2>
-    </div>
-    <!--  2 accordion -->
-    <div class="accordion-tab">
-      <h2>Годишни програми</h2>
-    </div>
-    <!-- 3 accordion -->
-    <div class="accordion-tab">
-      <h2>Годишни извештаи</h2>
-    </div>
-    <!-- 4 accordion -->
-    <div class="accordion-tab">
-      <h2>Стратегии</h2>
-    </div>
-    <!--5 accordion -->
-    <div class="accordion-tab test">
-      <h2>Едукативно информативни материјали</h2>
-    </div>
-    <div class="accordion-content">
-      <a href="#">Раководен одбор</a>
-      <a href="#">Собрание</a>
-      <a href="#">Структура и организациона поставеност</a>
-    </div>
-  </div><!--Контејнер што ги содржи акотдионите-->
-  <!--Footer-->
+  <!-- start of footer -->
   <footer>
-    <!--Div што го содржи логото и листата со линкови-->
     <div class="container">
-      <!--Логото-->
       <div class="logo">
-        <svg width="223" height="223" viewBox="0 0 135 134" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="150" height="150" viewBox="0 0 135 134" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_328_970)">
             <path
               d="M67.5 134C104.503 134 134.5 104.003 134.5 67C134.5 29.9969 104.503 0 67.5 0C30.4969 0 0.5 29.9969 0.5 67C0.5 104.003 30.4969 134 67.5 134Z"
@@ -366,36 +364,34 @@
               <rect width="134" height="134" fill="white" transform="translate(0.5)" />
             </clipPath>
           </defs>
-        </svg><!--Логото-->
+        </svg>
       </div>
-      <!--Листата со линкови-->
       <div class="buttons">
         <ul>
           <li>
-            <a href="#">Тикет</a>
+            <a href="#" class="footerBtn">Тикет</a>
           </li>
           <li>
-            <a href="#">Архива</a>
+            <a href="#" class="footerBtn">Архива</a>
           </li>
           <li>
-            <a href="#">мултимедија</a>
+            <a href="#" class="footerBtn">мултимедија</a>
           </li>
           <li>
-            <a href="#">истражувања на јавното мислење</a>
+            <a href="#" class="footerBtn">истражувања на јавното мислење</a>
           </li>
           <li>
-            <a href="#">информации од јавен карактер</a>
+            <a href="#" class="footerBtn">информации од јавен карактер</a>
           </li>
           <li>
-            <a href="#">политика на приватност</a>
+            <a href="#" class="footerBtn">политика на приватност</a>
           </li>
           <li>
-            <a href="#">контакт</a>
+            <a href="#" class="footerBtn">контакт</a>
           </li>
         </ul>
-      </div><!--Листата со линкови-->
-    </div><!--Div што го содржи логото и листата со линкови-->
-    <!--Копирајт-->
+      </div>
+    </div>
     <div class="copyright">
       <div class="text">
         <p>Црвен крст на Република Македонија ©. Сите права задржани 2023</p>
@@ -522,8 +518,9 @@
         </p>
       </div>
     </div><!--Копирајт-->
+
   </footer>
-  <!--Footer-->
+  <!-- end of Footer -->
 </body>
 
 </html>
