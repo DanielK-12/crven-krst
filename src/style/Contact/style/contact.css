@@ -185,3 +185,13 @@ h3 {
 #marginleft-h2 {
     margin-left: 100px;
 }
+
+#isprati-btn {
+    background-color: #BF0000;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    float: right;
+}
