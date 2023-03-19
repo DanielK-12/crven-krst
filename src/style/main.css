@@ -198,7 +198,7 @@ nav {
 }
 
 .hero-image {
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/hero-image-flag.png);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(/src/img/main-page-imgs/hero-image-flag.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -336,11 +336,11 @@ h2 {
 }
 
 .box-two {
-  background-image: url(../img/sl_050622_50190_20\ 1.png);
+  background-image: url(/src/img/main-page-imgs/kapka-krv.png);
 }
 
 .box-three {
-  background-image: url(../img/320703205.png);
+  background-image: url(/src/img/main-page-imgs/volonteri.png);
 }
 
 .box-one:before,
@@ -372,11 +372,10 @@ h2 {
 }
 
 .volonter-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(../img/volunteers-young-people-red-tshirts-looking-joyful-happy\ 1.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(/src/img/main-page-imgs/volunteers-young-people-red-tshirts-looking-joyful-happy\ 1.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
