@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/contact.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/contact.css">
     <title>Контакт</title>
 </head>
 
 <body>
-    <!--Навигацијата започнува тука-->
+    <!-- start of NAVBAR -->
     <nav class="sticky">
         <div class="logo"><svg width="135" height="134" viewBox="0 0 135 134" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -151,11 +151,11 @@
         </div>
         <div class="navLinks">
             <ul>
-                <li>
-                    <a href="../src/index.html" class="navLink">Почетна</a>
+                <li class="active-list">
+                    <a href="/src/index.html" class="navLink">Почетна</a>
                 </li>
                 <li>
-                    <a href="../src/about-us/about-us.html" class="navLink">Кои сме ние</a>
+                    <a href="/src/about-us.html" class="navLink">Кои сме ние</a>
                 </li>
                 <li>
                     <a href="#" class="navLink">Норматива</a>
@@ -163,11 +163,11 @@
                 <li>
                     <a href="#" class="navLink">Принципи</a>
                 </li>
-                <li><a href="../src/Dejnosti/dejnosti.html" class="navLink">Дејности</a></li>
-                <li><a href="/mladi-na-ck/mladi-na-ck.html" class="navLink">Млади на ЦК</a></li>
-                <li><a href="../src/cooporative-cooperation/cooporative-cooperation.html" class="navLink">Корпоративна
+                <li><a href="/src/dejnosti.html" class="navLink">Дејности</a></li>
+                <li><a href="/src/mladi-na-ck.html" class="navLink">Млади на ЦК</a></li>
+                <li><a href="/src/corporative-colaboration.html" class="navLink">Корпоративна
                         соработка</a></li>
-                <li><a href="/Publikacii/publikacii.html" class="navLink">Публикации</a></li>
+                <li><a href="/src/publikacii.html" class="navLink">Публикации</a></li>
                 <li><a href="#" class="navLink active">Контакт</a>
                 </li>
             </ul>
@@ -183,18 +183,17 @@
             <div class="flags">
                 <a href="#" class="btn btn-primary">Донации</a>
                 <div class="lang">
-                    <a href="#"><img src="style/img/Macedonia.png" alt="macedonian-flag"></a>
-                    <a href="#"><img src="style/img/United States of America.png" alt="american-flag"></a>
-                    <a href="#"><img src="style/img/Albania.png" alt="albanian-flag"></a>
+                    <a href="#"><img src="../src/img/Macedonia.png" alt="macedonian-flag"></a>
+                    <a href="#"><img src="../src/img/United States of America.png" alt="american-flag"></a>
+                    <a href="#"><img src="../src/img/Albania.png" alt="albanian-flag"></a>
                 </div>
             </div>
 
         </div>
     </nav>
-
-    <!--Навигацијата завршува тука-->
+    <!-- end of NAVBAR -->
     <!-- section contact -->
-    <h3 id="contact-h2">Контакт</h3>
+    <h3>Контакт</h3>
     <div class="contact-container">
         <div class="contact">
             <div class="address-box">
@@ -213,7 +212,7 @@
 
 
             <div class="input-box">
-                <form>
+                <form class="form">
                     <label for="name" id="name" class="address-content-titles">Вашето име (задолжително)</label>
                     <input type="text" name="name" id="name" class="input-content">
                     <label for="email" id="email" class="address-content-titles">Вашата Е-маил адреса
@@ -227,11 +226,11 @@
                 <label for="text" class="address-content-titles" rows="10" cols="50">Вашата порака
                     (задолжително)</label>
                 <textarea class="text-area"></textarea>
-                <button id="isprati-btn">ИСПРАТИ</button>
+                <div class="isprati-btn"><a href="#" class="btn btn-volonter">Стани волонтер</a></div>
             </div>
         </div>
     </div>
-    <h2 id="center-h2">Контакт Информации</h2>
+    <h3>Контакт Информации</h3>
 
     </div>
     <div class="container-boxes">
@@ -307,8 +306,8 @@
 
     <br>
     <!-- vtor del -->
-    <h2>СЕКТОР ЗА ПРОГРАМИ,ПРОЕКТНО РАБОТЕЊЕ И МОБИЛИЗИРАЊЕ ФОНДОВИ</h2>
-    <h3>Раководител: Љупка Петковска</h3>
+    <h3>СЕКТОР ЗА ПРОГРАМИ,ПРОЕКТНО РАБОТЕЊЕ И МОБИЛИЗИРАЊЕ ФОНДОВИ</h3>
+    <p class="rakovoditeli"><span class="rakovoditel">Раководител:</span> Љупка Петковска</p>
     <div class="container-boxes2">
         <div class="address-box">
             <div class="address-title">ПОДГОТВЕНОСТ И ОДГОВОР ПРИ КАТАСТРОФИ</div>
@@ -379,8 +378,8 @@
 
     <br>
     <!-- tret del -->
-    <h2>ОДДЕЛЕНИЕ ЗА ОДНОСИ СО ЈАВНОСТ И СТАНДАРДИ ЗА БРЕНДИРАЊЕ</h2>
-    <h3>Раководител: м-р Мајлинда Мустафа</h3>
+    <h3>ОДДЕЛЕНИЕ ЗА ОДНОСИ СО ЈАВНОСТ И СТАНДАРДИ ЗА БРЕНДИРАЊЕ</h3>
+    <p><span class="rakovoditel">Раководител: </span> м-р Мајлинда Мустафа</p>
     <div class="container-boxes3">
         <div class="address-box">
             <div class="address-title">ОДНОСИ СО ЈАВНОСТ</div>
@@ -428,7 +427,7 @@
 
     <br>
     <!-- cetvrt del -->
-    <h2>СЕКТОР ЗА КРЕИРАЊЕ ПОЛИТИККИ,УПРАВУВАЊЕ СО ЧОВЕЧКИ РЕСУРСИ,МЛАДИ,МОНИТОРИНГ И ЕВАЛУАЦИЈА</h2>
+    <h3>СЕКТОР ЗА КРЕИРАЊЕ ПОЛИТИКИ,УПРАВУВАЊЕ СО ЧОВЕЧКИ РЕСУРСИ,МЛАДИ,МОНИТОРИНГ И ЕВАЛУАЦИЈА</h3>
     <br><br>
     <div class="container-boxes4">
         <div class="address-box">
@@ -478,7 +477,8 @@
 
     <br>
     <!-- petti del -->
-    <h2>ОДДЕЛЕНИЕ ЗА ОПШТИ И ТЕХНИЧКИ РАБОТИ</h2>
+    <h3>ОДДЕЛЕНИЕ ЗА ОПШТИ И ТЕХНИЧКИ РАБОТИ</h3>
+    <p><span class="rakovoditel">Раководител: </span>Глигор Новачевски</p>
     <br><br>
     <div class="container-boxes5">
         <div class="address-box">
@@ -517,7 +517,7 @@
     <br>
     <!-- shesti del -->
     <br>
-    <h2>СЛУЖБА ЗА ФИНАНСИИ И РЕВИЗИЈА</h2>
+    <h3>СЛУЖБА ЗА ФИНАНСИИ И РЕВИЗИЈА</h3>
     <br><br>
     <div class="container-boxes6">
         <div class="address-box">

@@ -22,25 +22,21 @@ html {
     margin-bottom: 30px;
 }
 
-#contact-h2 {
-    text-decoration: underline solid #BF0000;
-    font-size: 26px;
-    margin-left: 150px;
-}
+
 
 .address-box {
     flex: 1;
     min-width: 500px;
+    min-height: 300px;
     border: solid 2px #BF0000;
     border-radius: 15px;
     display: flex;
-    margin: 15px;
     flex-direction: column;
-    margin-bottom: 30px;
 }
 
+
 .address-title {
-    height: 100px;
+    padding: 20px 40px;
     border-bottom: solid 2px #BF0000;
     width: 100%;
     display: flex;
@@ -61,6 +57,7 @@ html {
     padding: 0 60px;
 }
 
+
 .content {
     padding: 0 60px;
     font-weight: 600;
@@ -69,11 +66,12 @@ html {
     color: #2f2f2f;
 }
 
-form {
+.form {
     display: flex;
     flex: 1;
     flex-direction: column;
     margin: 0 50px;
+    min-width: 400px;
 }
 
 .input-box {
@@ -84,18 +82,23 @@ form {
 .input-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 60px;
+    padding: 10px 14px;
     border-radius: 5px;
     border: solid 2px #2f2f2f;
-    padding: 7px 14px;
     font-size: 20px;
     color: #2f2f2f;
-    margin: 10px;
+    margin: 10px 0;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    gap: 13px;
 }
 
 form>.address-content-titles {
     width: 100%;
+    padding: 0;
 }
 
 .comment-box {
@@ -105,8 +108,12 @@ form>.address-content-titles {
     flex-direction: column;
 }
 
+.comment-box>.address-content-titles {
+    padding: 0;
+    width: 100%;
+}
+
 .text-area {
-    margin: 20px;
     font-size: 20px;
     color: #2f2f2f;
     border: solid 2px #2f2f2f;
@@ -114,29 +121,28 @@ form>.address-content-titles {
     overflow: hidden;
     overflow-y: scroll;
     height: 60%;
+    margin: 10px 0;
+    padding: 20px;
 }
 
-#center-h2 {
-    text-align: center;
-    text-decoration: underline solid #BF0000;
-}
-
-h2 {
-    margin-left: 100px;
-    text-decoration: underline solid #BF0000;
-
-}
 
 h3 {
-    margin-left: 100px;
-    color: #BF0000;
+    margin-left: 200px;
+    display: inline-block;
 }
 
-.container-boxes {
+.container-boxes,
+.container-boxes2,
+.container-boxes3,
+.container-boxes4,
+.container-boxes5,
+.container-boxes6 {
     display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
     flex-wrap: wrap;
+    margin: 0 auto;
+    width: 80%;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
 .box {
@@ -147,51 +153,23 @@ h3 {
     border-radius: 15px;
 }
 
-.container-boxes2 {
+.rakovoditel {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #920000;
+    margin: 20px 0px 20px 100px;
+}
+
+.rakovoditeli {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+    color: #2f2f2f;
+    margin-left: 100px;
+}
+
+.isprati-btn {
     display: flex;
-    margin-right: 100px;
-    flex-wrap: wrap;
-    margin-left: 100px;
-}
-
-.container-boxes3 {
-    display: flex;
-    margin-right: 100px;
-    flex-wrap: wrap;
-    margin-left: 100px;
-}
-
-.container-boxes4 {
-    display: flex;
-    margin-right: 100px;
-    flex-wrap: wrap;
-    margin-left: 100px;
-}
-
-.container-boxes5 {
-    display: flex;
-    margin-right: 100px;
-    flex-wrap: wrap;
-    margin-left: 100px;
-}
-
-.container-boxes6 {
-    display: flex;
-    margin-right: 100px;
-    flex-wrap: wrap;
-    margin-left: 100px;
-}
-
-#marginleft-h2 {
-    margin-left: 100px;
-}
-
-#isprati-btn {
-    background-color: #BF0000;
-    color: white;
-    border-radius: 5px;
-    width: 150px;
-    height: 30px;
-    border: none;
-    float: right;
+    align-self: flex-end;
 }

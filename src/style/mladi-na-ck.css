@@ -200,7 +200,7 @@ nav {
 
 /*Слика за hero секцијата*/
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/DSC_0068\ 2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/src/img/youngsters-of-rc-imgs/youngsters-banner.png);
     width: 100%;
     min-height: 400px;
     background-position: center;
@@ -226,9 +226,8 @@ nav {
 
 /*Контентот за hero-content секцијата започнува тука. Сите текстови и слики, под hero сликата*/
 .hero-content {
-    margin: 20px auto;
+    margin: 0px auto;
     width: 80%;
-    max-width: 1920px;
     padding-bottom: 80px;
 }
 
@@ -440,6 +439,18 @@ h2 {
     font-weight: 700;
     line-height: 32.68px;
     color: #2F2F2F;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.68px;
+    text-transform: uppercase;
+    color: #2F2F2F;
+    border-bottom: solid 3px #BF0000;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+    display: inline-block;
+    margin: 0 auto;
 }
 
 .last {
