@@ -567,6 +567,12 @@ footer {
     margin: 5px;
 }
 
+.dejstvuvanje {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
 /*Копирајт*/
 /*footer*/
 
