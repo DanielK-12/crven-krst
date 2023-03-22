@@ -116,3 +116,10 @@ a {
 .more>a:hover {
     color: #2F2F2F;
 }
+
+.corp-heading {
+    align-self: center;
+    font-size: 36px;
+    line-height: 49px;
+    font-weight: 700;
+}
