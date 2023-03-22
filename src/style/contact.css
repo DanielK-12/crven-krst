@@ -66,7 +66,7 @@ html {
     color: #2f2f2f;
 }
 
-.form {
+.forma {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -90,13 +90,13 @@ html {
     margin: 10px 0;
 }
 
-form {
+.forma {
     height: 100%;
     display: flex;
     gap: 13px;
 }
 
-form>.address-content-titles {
+.forma>.address-content-titles {
     width: 100%;
     padding: 0;
 }
