@@ -22,7 +22,6 @@ nav {
   height: 160px;
   border-bottom: solid #BF0000 3px;
   padding: 13px 50px 13px 50px;
-  gap: 10px;
   background-color: #FFFFF6;
   z-index: 999;
   justify-content: space-between;
